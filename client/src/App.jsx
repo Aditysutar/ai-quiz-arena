@@ -1127,7 +1127,7 @@ export default function App() {
           <img
             src="/quiz-arena-logo.png"
             alt="Quiz Arena Logo"
-            className="w-10 h-10 object-contain"
+            className="w-40 h-40 object-contain"
           />
             <span>Quiz Arena</span>
           </button>
