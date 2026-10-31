@@ -1124,9 +1124,11 @@ export default function App() {
         {/* Main Application Header */}
         <header className="mb-6 flex items-center justify-between">
           <button className="flex items-center gap-2.5 font-display text-xl font-black text-white hover:opacity-90 transition" onClick={resetToHome}>
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 to-sky-400 flex items-center justify-center text-white shadow-glow">
-              <ClipboardList size={20} />
-            </div>
+          <img
+            src="/quiz-arena-logo.png"
+            alt="Quiz Arena Logo"
+            className="w-10 h-10 object-contain"
+          />
             <span>Quiz Arena</span>
           </button>
 
