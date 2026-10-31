@@ -5,6 +5,7 @@ import {
   BookOpen,
   Brain,
   CheckCircle2,
+  ClipboardList,
   Clock,
   Compass,
   Copy,
@@ -99,11 +100,11 @@ function Home({ onCreate, onJoin, onHistory, serverStatus }) {
         <div className="max-w-2xl relative z-10">
 
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight">
-            AI Quiz <span className="bg-gradient-to-r from-violet-400 via-purple-300 to-sky-400 bg-clip-text text-transparent">Arena</span>
+            Quiz <span className="bg-gradient-to-r from-violet-400 via-purple-300 to-sky-400 bg-clip-text text-transparent">Arena</span>
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-slate-300 leading-relaxed">
-            Create multiplayer rooms, generate dynamic quiz questions powered by Google Gemini AI, and compete with friends in real-time synchronized battles.
+            Create multiplayer quiz rooms, challenge your friends, test your knowledge across different topics, and compete in exciting real-time quiz battles.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3.5">
@@ -124,10 +125,6 @@ function Home({ onCreate, onJoin, onHistory, serverStatus }) {
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span>Multiplayer Sockets: <strong className="text-slate-200">Online</strong></span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Brain size={14} className="text-violet-400" />
-            <span>AI Model: <strong className="text-slate-200">{serverStatus?.geminiConfigured ? 'Google Gemini 2.5 / 3.5' : 'Question Bank Fallback'}</strong></span>
           </div>
           <div className="flex items-center gap-2">
             <Award size={14} className="text-sky-400" />
@@ -152,9 +149,9 @@ function Home({ onCreate, onJoin, onHistory, serverStatus }) {
           <div className="w-12 h-12 rounded-2xl bg-sky-500/20 flex items-center justify-center text-sky-300 mb-4">
             <Brain size={24} />
           </div>
-          <h3 className="font-display font-bold text-lg text-white">Google Gemini AI</h3>
+          <h3 className="font-display font-bold text-lg text-white">Specific Topic Quiz Generation</h3>
           <p className="mt-2 text-sm text-slate-400 leading-relaxed">
-            Fresh, verified quiz questions dynamically generated on any custom topic or standard category.
+            Generate quiz questions across standard categories or custom topics of your choice.
           </p>
         </div>
 
@@ -1128,9 +1125,9 @@ export default function App() {
         <header className="mb-6 flex items-center justify-between">
           <button className="flex items-center gap-2.5 font-display text-xl font-black text-white hover:opacity-90 transition" onClick={resetToHome}>
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-violet-600 to-sky-400 flex items-center justify-center text-white shadow-glow">
-              <Brain size={20} />
+              <ClipboardList size={20} />
             </div>
-            <span>AI Quiz Arena</span>
+            <span>Quiz Arena</span>
           </button>
 
           <div className="flex items-center gap-3">
@@ -1243,7 +1240,8 @@ export default function App() {
 
       {/* Footer */}
       <footer className="mt-12 pt-6 border-t border-white/5 text-center text-xs text-slate-500">
-        AI Quiz Arena · Built with React 19, Socket.IO, Express & Google Gemini AI
+        <p>Quiz Arena · Developed by Aditya Sutar</p>
+        <p className="mt-1">Linkedin - www.linkedin.com/in/aditya-sutar-7793902b5</p>
       </footer>
     </div>
   );
