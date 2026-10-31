@@ -97,10 +97,6 @@ function Home({ onCreate, onJoin, onHistory, serverStatus }) {
         <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-gradient-to-br from-violet-600/20 to-sky-500/20 blur-3xl pointer-events-none" />
 
         <div className="max-w-2xl relative z-10">
-          <div className="inline-flex items-center gap-2 rounded-full border border-violet-500/30 bg-violet-500/10 px-3.5 py-1 text-xs font-semibold uppercase tracking-wider text-violet-300 mb-6">
-            <Sparkles size={14} className="text-violet-400" />
-            Handshake AI Monthly Challenge
-          </div>
 
           <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-black leading-tight tracking-tight">
             AI Quiz <span className="bg-gradient-to-r from-violet-400 via-purple-300 to-sky-400 bg-clip-text text-transparent">Arena</span>
